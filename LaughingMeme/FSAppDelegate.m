@@ -7,14 +7,26 @@
 //
 
 #import "FSAppDelegate.h"
+#import "FSWelcomeViewController.h"
+
+@interface FSAppDelegate ()
+
+@property (nonatomic, strong) UINavigationController *navigationController;
+
+@end
 
 @implementation FSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    FSWelcomeViewController *welcomeViewController = [[FSWelcomeViewController alloc] init];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:welcomeViewController];
+    
+    self.window.rootViewController = self.navigationController;
+
     [self.window makeKeyAndVisible];
     return YES;
 }

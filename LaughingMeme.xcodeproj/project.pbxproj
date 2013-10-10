@@ -19,6 +19,10 @@
 		37094F001807182F00E42808 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37094EE81807182F00E42808 /* UIKit.framework */; };
 		37094F081807182F00E42808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37094F061807182F00E42808 /* InfoPlist.strings */; };
 		37094F0A1807182F00E42808 /* LaughingMemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37094F091807182F00E42808 /* LaughingMemeTests.m */; };
+		EAEDD0BC18071A590021D78E /* FSWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEDD0BA18071A590021D78E /* FSWelcomeViewController.m */; };
+		EAEDD0BD18071A590021D78E /* FSWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEDD0BB18071A590021D78E /* FSWelcomeViewController.xib */; };
+		EAEDD0C118071A890021D78E /* FSChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEDD0BF18071A890021D78E /* FSChatViewController.m */; };
+		EAEDD0C218071A890021D78E /* FSChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEDD0C018071A890021D78E /* FSChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		37094F051807182F00E42808 /* LaughingMemeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaughingMemeTests-Info.plist"; sourceTree = "<group>"; };
 		37094F071807182F00E42808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37094F091807182F00E42808 /* LaughingMemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaughingMemeTests.m; sourceTree = "<group>"; };
+		EAEDD0B918071A590021D78E /* FSWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSWelcomeViewController.h; sourceTree = "<group>"; };
+		EAEDD0BA18071A590021D78E /* FSWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSWelcomeViewController.m; sourceTree = "<group>"; };
+		EAEDD0BB18071A590021D78E /* FSWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSWelcomeViewController.xib; sourceTree = "<group>"; };
+		EAEDD0BE18071A890021D78E /* FSChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSChatViewController.h; sourceTree = "<group>"; };
+		EAEDD0BF18071A890021D78E /* FSChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSChatViewController.m; sourceTree = "<group>"; };
+		EAEDD0C018071A890021D78E /* FSChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSChatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,12 @@
 			children = (
 				37094EF31807182F00E42808 /* FSAppDelegate.h */,
 				37094EF41807182F00E42808 /* FSAppDelegate.m */,
+				EAEDD0B918071A590021D78E /* FSWelcomeViewController.h */,
+				EAEDD0BA18071A590021D78E /* FSWelcomeViewController.m */,
+				EAEDD0BB18071A590021D78E /* FSWelcomeViewController.xib */,
+				EAEDD0BE18071A890021D78E /* FSChatViewController.h */,
+				EAEDD0BF18071A890021D78E /* FSChatViewController.m */,
+				EAEDD0C018071A890021D78E /* FSChatViewController.xib */,
 				37094EF61807182F00E42808 /* Images.xcassets */,
 				37094EEB1807182F00E42808 /* Supporting Files */,
 			);
@@ -221,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37094EEF1807182F00E42808 /* InfoPlist.strings in Resources */,
+				EAEDD0C218071A890021D78E /* FSChatViewController.xib in Resources */,
 				37094EF71807182F00E42808 /* Images.xcassets in Resources */,
+				EAEDD0BD18071A590021D78E /* FSWelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37094EF11807182F00E42808 /* main.m in Sources */,
+				EAEDD0C118071A890021D78E /* FSChatViewController.m in Sources */,
+				EAEDD0BC18071A590021D78E /* FSWelcomeViewController.m in Sources */,
 				37094EF51807182F00E42808 /* FSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +462,7 @@
 				37094F0F1807182F00E42808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37094F101807182F00E42808 /* Build configuration list for PBXNativeTarget "LaughingMemeTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +471,7 @@
 				37094F121807182F00E42808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
