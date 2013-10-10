@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FSWelcomeViewController : UIViewController
+@interface FSWelcomeViewController : UIViewController <UITextFieldDelegate>
 
 - (IBAction)hostAction:(id)sender;
 - (IBAction)joinAction:(id)sender;
+- (IBAction)takeFakePicture:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

@@ -22,7 +22,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     
-
+        self.title = @"Laughing room";
+        
         
     }
     return self;
@@ -31,7 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    self.edgesForExtendedLayout = UIRectEdgeTop;
 }
 
 
@@ -48,6 +50,23 @@
     [self presentViewController:browserViewController animated:YES completion:nil];
 }
 
+- (IBAction)takeFakePicture:(id)sender
+{
+    if ([UIImagePickerController isSourceTypeAvailable:
+         UIImagePickerControllerSourceTypeCamera])
+    {
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+//        imagePicker.delegate = self;
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+//        imagePicker.mediaTypes = [NSArray arrayWithObjects:(NSString *) kUTTypeImage,nil];
+        imagePicker.allowsEditing = NO;
+        [self presentViewController:imagePicker animated:YES completion:^{
+            NSString *imageName = [NSString stringWithFormat:@"cat%d.jpg",arc4random()%3+1];
+            self.imageView.image = [UIImage imageNamed:imageName];
+        }];
+    }
+}
+
 - (BOOL)browserViewController:(MCBrowserViewController *)browserViewController shouldPresentNearbyPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info
 {
     return YES;
@@ -61,6 +80,12 @@
 - (void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController
 {
     
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return NO;
 }
 
 @end
