@@ -7,6 +7,7 @@
 //
 
 #import "FSAppDelegate.h"
+#import "FSMultipeerConnection.h"
 #import "FSWelcomeViewController.h"
 
 @interface FSAppDelegate ()
@@ -28,6 +29,8 @@
     self.window.rootViewController = self.navigationController;
 
     [self.window makeKeyAndVisible];
+    
+    [FSMultipeerConnection sharedInstance];
     return YES;
 }
 

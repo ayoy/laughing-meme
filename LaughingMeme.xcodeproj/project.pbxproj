@@ -23,6 +23,7 @@
 		EAEDD0BD18071A590021D78E /* FSWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEDD0BB18071A590021D78E /* FSWelcomeViewController.xib */; };
 		EAEDD0C118071A890021D78E /* FSChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEDD0BF18071A890021D78E /* FSChatViewController.m */; };
 		EAEDD0C218071A890021D78E /* FSChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEDD0C018071A890021D78E /* FSChatViewController.xib */; };
+		37094F1518071A5100E42808 /* FSMultipeerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 37094F1418071A5100E42808 /* FSMultipeerConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		EAEDD0BE18071A890021D78E /* FSChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSChatViewController.h; sourceTree = "<group>"; };
 		EAEDD0BF18071A890021D78E /* FSChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSChatViewController.m; sourceTree = "<group>"; };
 		EAEDD0C018071A890021D78E /* FSChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSChatViewController.xib; sourceTree = "<group>"; };
+		37094F1318071A5100E42808 /* FSMultipeerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMultipeerConnection.h; sourceTree = "<group>"; };
+		37094F1418071A5100E42808 /* FSMultipeerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMultipeerConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				EAEDD0C018071A890021D78E /* FSChatViewController.xib */,
 				37094EF61807182F00E42808 /* Images.xcassets */,
 				37094EEB1807182F00E42808 /* Supporting Files */,
+				37094F1318071A5100E42808 /* FSMultipeerConnection.h */,
+				37094F1418071A5100E42808 /* FSMultipeerConnection.m */,
 			);
 			path = LaughingMeme;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				37094EF11807182F00E42808 /* main.m in Sources */,
 				EAEDD0C118071A890021D78E /* FSChatViewController.m in Sources */,
 				EAEDD0BC18071A590021D78E /* FSWelcomeViewController.m in Sources */,
+				37094F1518071A5100E42808 /* FSMultipeerConnection.m in Sources */,
 				37094EF51807182F00E42808 /* FSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
