@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37094EE51807182F00E42808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37094EE41807182F00E42808 /* Foundation.framework */; };
+		37094EE71807182F00E42808 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37094EE61807182F00E42808 /* CoreGraphics.framework */; };
+		37094EE91807182F00E42808 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37094EE81807182F00E42808 /* UIKit.framework */; };
+		37094EEF1807182F00E42808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37094EED1807182F00E42808 /* InfoPlist.strings */; };
+		37094EF11807182F00E42808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37094EF01807182F00E42808 /* main.m */; };
+		37094EF51807182F00E42808 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37094EF41807182F00E42808 /* FSAppDelegate.m */; };
+		37094EF71807182F00E42808 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37094EF61807182F00E42808 /* Images.xcassets */; };
+		37094EFE1807182F00E42808 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37094EFD1807182F00E42808 /* XCTest.framework */; };
+		37094EFF1807182F00E42808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37094EE41807182F00E42808 /* Foundation.framework */; };
+		37094F001807182F00E42808 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37094EE81807182F00E42808 /* UIKit.framework */; };
+		37094F081807182F00E42808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37094F061807182F00E42808 /* InfoPlist.strings */; };
+		37094F0A1807182F00E42808 /* LaughingMemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37094F091807182F00E42808 /* LaughingMemeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37094F011807182F00E42808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37094ED91807182F00E42808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37094EE01807182F00E42808;
+			remoteInfo = LaughingMeme;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37094EE11807182F00E42808 /* LaughingMeme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaughingMeme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37094EE41807182F00E42808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37094EE61807182F00E42808 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37094EE81807182F00E42808 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37094EEC1807182F00E42808 /* LaughingMeme-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaughingMeme-Info.plist"; sourceTree = "<group>"; };
+		37094EEE1807182F00E42808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37094EF01807182F00E42808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37094EF21807182F00E42808 /* LaughingMeme-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaughingMeme-Prefix.pch"; sourceTree = "<group>"; };
+		37094EF31807182F00E42808 /* FSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAppDelegate.h; sourceTree = "<group>"; };
+		37094EF41807182F00E42808 /* FSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
+		37094EF61807182F00E42808 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37094EFC1807182F00E42808 /* LaughingMemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaughingMemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37094EFD1807182F00E42808 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		37094F051807182F00E42808 /* LaughingMemeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaughingMemeTests-Info.plist"; sourceTree = "<group>"; };
+		37094F071807182F00E42808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37094F091807182F00E42808 /* LaughingMemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaughingMemeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37094EDE1807182F00E42808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37094EE71807182F00E42808 /* CoreGraphics.framework in Frameworks */,
+				37094EE91807182F00E42808 /* UIKit.framework in Frameworks */,
+				37094EE51807182F00E42808 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37094EF91807182F00E42808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37094EFE1807182F00E42808 /* XCTest.framework in Frameworks */,
+				37094F001807182F00E42808 /* UIKit.framework in Frameworks */,
+				37094EFF1807182F00E42808 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37094ED81807182F00E42808 = {
+			isa = PBXGroup;
+			children = (
+				37094EEA1807182F00E42808 /* LaughingMeme */,
+				37094F031807182F00E42808 /* LaughingMemeTests */,
+				37094EE31807182F00E42808 /* Frameworks */,
+				37094EE21807182F00E42808 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37094EE21807182F00E42808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37094EE11807182F00E42808 /* LaughingMeme.app */,
+				37094EFC1807182F00E42808 /* LaughingMemeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37094EE31807182F00E42808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37094EE41807182F00E42808 /* Foundation.framework */,
+				37094EE61807182F00E42808 /* CoreGraphics.framework */,
+				37094EE81807182F00E42808 /* UIKit.framework */,
+				37094EFD1807182F00E42808 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37094EEA1807182F00E42808 /* LaughingMeme */ = {
+			isa = PBXGroup;
+			children = (
+				37094EF31807182F00E42808 /* FSAppDelegate.h */,
+				37094EF41807182F00E42808 /* FSAppDelegate.m */,
+				37094EF61807182F00E42808 /* Images.xcassets */,
+				37094EEB1807182F00E42808 /* Supporting Files */,
+			);
+			path = LaughingMeme;
+			sourceTree = "<group>";
+		};
+		37094EEB1807182F00E42808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37094EEC1807182F00E42808 /* LaughingMeme-Info.plist */,
+				37094EED1807182F00E42808 /* InfoPlist.strings */,
+				37094EF01807182F00E42808 /* main.m */,
+				37094EF21807182F00E42808 /* LaughingMeme-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37094F031807182F00E42808 /* LaughingMemeTests */ = {
+			isa = PBXGroup;
+			children = (
+				37094F091807182F00E42808 /* LaughingMemeTests.m */,
+				37094F041807182F00E42808 /* Supporting Files */,
+			);
+			path = LaughingMemeTests;
+			sourceTree = "<group>";
+		};
+		37094F041807182F00E42808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37094F051807182F00E42808 /* LaughingMemeTests-Info.plist */,
+				37094F061807182F00E42808 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37094EE01807182F00E42808 /* LaughingMeme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37094F0D1807182F00E42808 /* Build configuration list for PBXNativeTarget "LaughingMeme" */;
+			buildPhases = (
+				37094EDD1807182F00E42808 /* Sources */,
+				37094EDE1807182F00E42808 /* Frameworks */,
+				37094EDF1807182F00E42808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaughingMeme;
+			productName = LaughingMeme;
+			productReference = 37094EE11807182F00E42808 /* LaughingMeme.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37094EFB1807182F00E42808 /* LaughingMemeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37094F101807182F00E42808 /* Build configuration list for PBXNativeTarget "LaughingMemeTests" */;
+			buildPhases = (
+				37094EF81807182F00E42808 /* Sources */,
+				37094EF91807182F00E42808 /* Frameworks */,
+				37094EFA1807182F00E42808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37094F021807182F00E42808 /* PBXTargetDependency */,
+			);
+			name = LaughingMemeTests;
+			productName = LaughingMemeTests;
+			productReference = 37094EFC1807182F00E42808 /* LaughingMemeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37094ED91807182F00E42808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Future Simple";
+				TargetAttributes = {
+					37094EFB1807182F00E42808 = {
+						TestTargetID = 37094EE01807182F00E42808;
+					};
+				};
+			};
+			buildConfigurationList = 37094EDC1807182F00E42808 /* Build configuration list for PBXProject "LaughingMeme" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37094ED81807182F00E42808;
+			productRefGroup = 37094EE21807182F00E42808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37094EE01807182F00E42808 /* LaughingMeme */,
+				37094EFB1807182F00E42808 /* LaughingMemeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37094EDF1807182F00E42808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37094EEF1807182F00E42808 /* InfoPlist.strings in Resources */,
+				37094EF71807182F00E42808 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37094EFA1807182F00E42808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37094F081807182F00E42808 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37094EDD1807182F00E42808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37094EF11807182F00E42808 /* main.m in Sources */,
+				37094EF51807182F00E42808 /* FSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37094EF81807182F00E42808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37094F0A1807182F00E42808 /* LaughingMemeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37094F021807182F00E42808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37094EE01807182F00E42808 /* LaughingMeme */;
+			targetProxy = 37094F011807182F00E42808 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37094EED1807182F00E42808 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37094EEE1807182F00E42808 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37094F061807182F00E42808 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37094F071807182F00E42808 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37094F0B1807182F00E42808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37094F0C1807182F00E42808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37094F0E1807182F00E42808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaughingMeme/LaughingMeme-Prefix.pch";
+				INFOPLIST_FILE = "LaughingMeme/LaughingMeme-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37094F0F1807182F00E42808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaughingMeme/LaughingMeme-Prefix.pch";
+				INFOPLIST_FILE = "LaughingMeme/LaughingMeme-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		37094F111807182F00E42808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LaughingMeme.app/LaughingMeme";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaughingMeme/LaughingMeme-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LaughingMemeTests/LaughingMemeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		37094F121807182F00E42808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LaughingMeme.app/LaughingMeme";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaughingMeme/LaughingMeme-Prefix.pch";
+				INFOPLIST_FILE = "LaughingMemeTests/LaughingMemeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37094EDC1807182F00E42808 /* Build configuration list for PBXProject "LaughingMeme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37094F0B1807182F00E42808 /* Debug */,
+				37094F0C1807182F00E42808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37094F0D1807182F00E42808 /* Build configuration list for PBXNativeTarget "LaughingMeme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37094F0E1807182F00E42808 /* Debug */,
+				37094F0F1807182F00E42808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37094F101807182F00E42808 /* Build configuration list for PBXNativeTarget "LaughingMemeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37094F111807182F00E42808 /* Debug */,
+				37094F121807182F00E42808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37094ED91807182F00E42808 /* Project object */;
+}
