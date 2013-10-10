@@ -8,9 +8,11 @@
 
 #import "FSWelcomeViewController.h"
 #import "FSChatViewController.h"
+#import "FSMultipeerConnection.h"
 
-@interface FSWelcomeViewController ()
+@interface FSWelcomeViewController () <MCBrowserViewControllerDelegate>
 
+@property (nonatomic, weak) IBOutlet UITextField *textField;
 @end
 
 @implementation FSWelcomeViewController
@@ -40,5 +42,25 @@
 }
 
 - (IBAction)joinAction:(id)sender {
+    FSMultipeerConnection *connection = [FSMultipeerConnection sharedInstance];
+    [connection setupSessionForPeerWithName:self.textField.text];
+    MCBrowserViewController *browserViewController = [[MCBrowserViewController alloc] initWithBrowser:connection.browser session:connection.session];
+    [self presentViewController:browserViewController animated:YES completion:nil];
 }
+
+- (BOOL)browserViewController:(MCBrowserViewController *)browserViewController shouldPresentNearbyPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info
+{
+    return YES;
+}
+
+- (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController
+{
+    
+}
+
+- (void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController
+{
+    
+}
+
 @end

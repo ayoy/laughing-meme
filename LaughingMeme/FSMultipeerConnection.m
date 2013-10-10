@@ -10,7 +10,7 @@
 
 static NSString * const kServiceType = @"laughing-meme";
 
-@interface FSMultipeerConnection ()
+@interface FSMultipeerConnection () // <MCNearbyServiceBrowserDelegate>
 
 @end
 
@@ -30,15 +30,28 @@ static NSString * const kServiceType = @"laughing-meme";
 {
     self = [super init];
     if (self) {
-        self.peer = [[MCPeerID alloc] initWithDisplayName:@"testUser"];
-        self.session = [[MCSession alloc] initWithPeer:self.peer];
-        
-        self.advertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:self.peer
-                                                            discoveryInfo:@{@"sessionName": @"laughing-meme"}
-                                                              serviceType:kServiceType];
-        [self.advertiser startAdvertisingPeer];
     }
     return self;
+}
+
+- (MCNearbyServiceBrowser *)browser
+{
+    if (!_browser) {
+        _browser = [[MCNearbyServiceBrowser alloc] initWithPeer:self.peer serviceType:kServiceType];
+    }
+    return _browser;
+}
+
+- (void)setupSessionForPeerWithName:(NSString *)name
+{
+    self.peer = [[MCPeerID alloc] initWithDisplayName:name];
+    self.session = [[MCSession alloc] initWithPeer:self.peer];
+    
+    self.advertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:self.peer
+                                                        discoveryInfo:@{@"sessionName": @"laughing-meme"}
+                                                          serviceType:kServiceType];
+    [self.advertiser startAdvertisingPeer];
+    [self.browser startBrowsingForPeers];
 }
 
 @end

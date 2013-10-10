@@ -14,7 +14,10 @@
 
 + (FSMultipeerConnection *)sharedInstance;
 
+- (void)setupSessionForPeerWithName:(NSString *)name;
+
 @property (nonatomic, strong) MCPeerID *peer;
 @property (nonatomic, strong) MCSession *session;
 @property (nonatomic, strong) MCNearbyServiceAdvertiser *advertiser;
+@property (nonatomic, strong) MCNearbyServiceBrowser *browser;
 @end
