@@ -10,4 +10,6 @@
 
 @interface FSChatViewController : UITableViewController
 
+@property (strong, nonatomic) IBOutlet UIView *headerView;
+@property (strong, nonatomic) IBOutlet UIView *footerView;
 @end

@@ -19,6 +19,7 @@
                     <rect key="frame" x="41" y="109" width="238" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Host a lauging meme room">
+                        <color key="titleColor" red="0.61835343119999997" green="0.52766962279999996" blue="0.72590481510000004" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -29,6 +30,7 @@
                     <rect key="frame" x="41" y="178" width="238" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Join a lauging meme room">
+                        <color key="titleColor" red="0.61835343119999997" green="0.52766962279999996" blue="0.72590481510000004" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
